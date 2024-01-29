@@ -1,0 +1,140 @@
+.courses-category {
+  .flex-start1 {
+    .nav-link {
+      font-size: 16px;
+      color: #777;
+      &:hover {
+        color: #39b54a;
+      }
+    }
+    align-content: flex-start !important;
+    ul {
+      //   list-style: none;
+      //   display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      flex-direction: column;
+      li {
+        a {
+          color: #777;
+          font-size: 16px;
+          font-weight: 400;
+          &:hover {
+            color: #39b54a;
+          }
+        }
+      }
+    }
+  }
+  background: #fbfbfb;
+  margin-top: 70px;
+  .course_top {
+    background: #062743;
+    .course_heading {
+      padding: 45px 0;
+      text-align: center;
+      .title {
+        color: #fff;
+        h2 {
+          font-size: 50px;
+          font-weight: 700;
+          position: relative;
+          display: inline-block;
+          &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -8px;
+            width: 100%;
+            height: 2px;
+            background: #39b54a;
+          }
+        }
+        h5 {
+          font-size: 25px;
+          padding-top: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .course_layout {
+    margin-top: 30px;
+    .left_area {
+      background: #fff;
+      padding: 0px 30px 30px;
+    }
+  }
+  .search {
+    input {
+      font-size: 15px;
+      padding: 12px 32px;
+      :focus {
+        outline: none;
+      }
+    }
+    position: relative;
+    font-size: 20px;
+    .search_icon {
+      position: absolute;
+      left: 7px;
+      bottom: 16px;
+      font-size: 20px;
+    }
+  }
+  .course_boxes {
+    .card {
+      margin-bottom: 20px;
+    }
+    .top_title {
+      h3 {
+        font-size: 3.3rem;
+        font-weight: 400;
+        position: relative;
+        padding-bottom: 8px;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 300px;
+          height: 2px;
+          background: #39b54a;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background: #d5d5d5;
+        }
+      }
+    }
+    .course-img {
+      background: #062743;
+      position: relative;
+      .course_icon {
+        color: #fbfbfb;
+        font-size: 90px;
+        top: 30%;
+        position: absolute;
+        left: 35%;
+      }
+    }
+    .courses_area {
+      .course_title {
+        h4 {
+          font-size: 2.6rem;
+          text-align: center;
+          font-weight: 500;
+          min-height: 35px;
+          padding: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.discussion-section {
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  padding: 60px 0;
+  margin: auto;
+  background: #ffffff;
+
+  .project-icon {
+    // width: 100%;
+    text-align: center;
+  }
+
+  .projects-text {
+    text-align: center;
+    padding: 15px 0 40px 0;
+
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      color: $primaryTextColor;
+
+      span {
+        color: $secondaryTextColor;
+      }
+    }
+  }
+
+  .discussion-card-four {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 10px 60px 0px rgba(0, 32, 110, 0.07);
+    box-shadow: 0px 10px 60px 0px rgba(0, 32, 110, 0.07);
+    padding: 40px;
+    padding-top: 60px;
+    position: relative;
+    min-height: 290px;
+  }
+  .discussion-card-four__bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/images/discutionbg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  .discussion-card-four:hover .discussion-card-four__bg {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+  }
+  .discussion-card-four__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(90deg, #00206e 0%, #00accc 100%);
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  }
+  .discussion-card-four__content {
+    position: relative;
+    margin-bottom: -6px;
+  }
+  .discussion-card-four__circle {
+    width: 65px;
+    height: 65px;
+    background-color: #00accc;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .discussion-card-four:hover .discussion-card-four__circle {
+    background-color: #fff;
+  }
+  .discussion-card-four__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $primaryBtnColor;
+    margin: 0;
+    margin-bottom: 14px;
+    margin-top: 40px;
+    transition: 0.2s;
+  }
+  .discussion-card-four:hover .discussion-card-four__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $primaryBgColor;
+    margin: 0;
+    margin-bottom: 14px;
+    margin-top: 40px;
+  }
+  .discussion-card-four__text {
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    margin: 0;
+    font-size: 16px !important;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 1.6rem;
+  }
+  .discussion-card-four:hover .discussion-card-four__text {
+    color: $primaryBgColor;
+  }
+}

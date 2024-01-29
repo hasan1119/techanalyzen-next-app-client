@@ -1,0 +1,290 @@
+.offer_section {
+  // margin: 150px 0;
+
+  .offer_icon {
+    text-align: center;
+  }
+
+  .special_offer_title {
+    text-align: center;
+    padding: 15px 0 40px 0;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: $primaryTextColor;
+
+      span {
+        color: $secondaryTextColor;
+      }
+    }
+  }
+
+  .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+  }
+
+  .offer-card {
+    background: #fff;
+    position: relative;
+    // overflow: hidden;
+    box-shadow: -3px 5px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    margin-bottom: 24px;
+    transition: 0.7s;
+    // height: 400px;
+    height: auto;
+
+    .special_offer_course_item {
+      .image-box {
+        img {
+          width: 100%;
+        }
+      }
+
+      .offer_content {
+        padding: 15px 10px;
+
+        .offer_course_title {
+          margin-bottom: 5px;
+          font-size: 1.6rem;
+
+          a {
+            text-decoration: none;
+            color: $secondaryTextColor;
+
+            span {
+              display: block;
+              text-align: left;
+            }
+          }
+        }
+
+        .course_reviews {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 15px;
+
+          h4 {
+            margin-bottom: 0;
+            font-size: 1.6rem;
+            color: $primaryBtnColor;
+            padding-top: 5px;
+          }
+
+          .offer-course-rate {
+            margin-left: 5px;
+            display: flex;
+          }
+
+          h6 {
+            margin-bottom: 0;
+            font-size: 1.6rem;
+            color: $primaryBtnColor;
+            padding-top: 5px;
+            padding-left: 5px;
+          }
+        }
+
+        .profile-details {
+          margin-bottom: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .instructor_img {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            a {
+              color: $primaryTextColor;
+              text-decoration: none;
+
+              img {
+                max-width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                margin-right: 10px;
+                margin-bottom: 0;
+              }
+            }
+
+            .name {
+              font-weight: 500;
+              font-size: 1.6rem;
+              color: #515151;
+              margin-bottom: 0;
+              text-align: left;
+            }
+          }
+
+          .offer-course-rate {
+            font-size: 1rem;
+          }
+        }
+
+        .card_middle {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .offer-view {
+            display: flex;
+            align-items: center;
+
+            p {
+              font-weight: 500;
+              font-size: 1.6rem;
+              color: $secondaryTextColor;
+              margin-bottom: 0;
+            }
+          }
+
+          .module_amount {
+            display: flex;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: $secondaryTextColor;
+            align-items: center;
+            p {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .offer_discount {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          p {
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: $secondaryTextColor;
+            margin-bottom: 0 !important;
+          }
+
+          h3 {
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #fb0f00;
+            margin-bottom: 0;
+
+            span {
+              color: $primaryBtnColor;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .offer-course-ovelay {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      background: rgba(28, 5, 56, 0.655);
+      border-radius: 10px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transition: 0.7s;
+    }
+
+    .offer-course-ovelay {
+      a {
+        font-weight: 500 !important;
+        background: $primaryBtnColor;
+        border: 1px solid $primaryBtnColor;
+        text-align: center;
+        padding: 10px 30px;
+        position: relative;
+        color: #fff;
+        box-shadow: inset 0 0 0 0 #fff;
+        border-radius: 32px;
+        transition: all 0.5s;
+        border-radius: 32px;
+        font-size: 2rem !important;
+        text-decoration: none !important;
+
+        &:hover {
+          background: #fff;
+          color: $secondaryTextColor;
+          border: none;
+        }
+      }
+    }
+
+    &:hover {
+      .offer-course-ovelay {
+        height: 100%;
+        bottom: 0;
+        transition: 0.7s;
+
+        a {
+          &:hover {
+            background: #fff;
+            color: $secondaryTextColor;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-button-next {
+    // right: -20px;
+  }
+
+  .swiper-button-prev {
+    // left: -20px;
+  }
+
+  .swiper-navBtn,
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $primaryBgColor;
+    height: 40px;
+    width: 40px;
+    background: $secondaryBtnColor;
+    border-radius: 50%;
+    cursor: pointer;
+
+    @media #{$medium, $small} {
+      display: none;
+    }
+
+    &::before {
+      font-size: 18px;
+    }
+
+    &::after {
+      font-size: 18px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #000;
+  }
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+    cursor: auto;
+    pointer-events: none;
+    background: #939393fc;
+  }
+
+  .swiper-pagination {
+    font-size: 15px;
+    transform: translateY(15px);
+  }
+}

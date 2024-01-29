@@ -1,0 +1,72 @@
+.myCourses-container {
+  .card-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .card-img {
+      height: 300px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .course-card {
+      flex-basis: 31%;
+      margin-bottom: 50px;
+      box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.1);
+      .card-title {
+        font-size: 20px;
+        background-color: #eee;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .card-description {
+        font-size: 15px;
+      }
+      .course-btns {
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      .course-card {
+        flex-basis: 48%;
+      }
+    }
+    @media (max-width: 768px) {
+      .course-card {
+        flex-basis: 48%;
+      }
+    }
+    @media (max-width: 576px) {
+      .course-card {
+        flex-basis: 100%;
+      }
+    }
+    .card-img {
+      overflow: hidden;
+    }
+    .course-card img {
+      transition: 0.5s;
+    }
+    .course-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .course-btns {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 20px;
+      a {
+        width: 50%;
+      }
+    }
+  }
+}

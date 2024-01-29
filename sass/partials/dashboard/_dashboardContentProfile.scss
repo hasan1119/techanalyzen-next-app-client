@@ -1,0 +1,197 @@
+.dashboard_profile {
+  padding-top: 50px;
+  #myTab {
+    padding: 30px 20px;
+    background: #f9f9fa;
+  }
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    color: #2d0160;
+    border: unset;
+    border-bottom: 4px solid #2d0160;
+    font-size: 2rem;
+  }
+  .nav-link {
+    font-size: 1.8rem;
+    color: #2d0160;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  thead {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+  }
+  tbody {
+    font-size: 16px;
+    margin: 12px 0;
+    button {
+      font-size: 16px;
+    }
+  }
+  .wallet {
+    background: #f2f2f2;
+    max-width: 850px;
+    width: 100%;
+    padding: 15px;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    margin: 0 auto;
+    .left_box {
+      max-width: 375px;
+      padding: 34px 15px 15px 15px;
+      background: #fff;
+      min-height: 241px;
+      border-radius: 5px;
+      margin-top: 15px;
+
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        font-weight: 600;
+        color: #17171a;
+      }
+      p {
+        font-size: 15px;
+        color: #17171a;
+        font-weight: 500;
+      }
+      h6 {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        color: #01753b;
+      }
+    }
+    .right_box {
+      max-width: 375px;
+      padding: 34px 15px 15px 15px;
+      background: #fff;
+      min-height: 241px;
+      border-radius: 5px;
+      margin-top: 15px;
+      .note {
+        font-size: 14px;
+        font-weight: 500;
+        padding-top: 11px;
+        color: #616161;
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 700;
+        font-weight: 600;
+        color: #17171a;
+      }
+      .price {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        color: #01753b;
+        span {
+          font-size: 18px;
+        }
+      }
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        background: #349765;
+        padding: 8px;
+        display: inline-block;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+.profile_box {
+  .personal_detail,
+  .password_change {
+    background: #fff;
+    padding: 50px 30px;
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .form_box {
+      img {
+        width: 100px;
+        border: 1px solid #21b17c;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 20px auto;
+        display: block;
+      }
+      img.profile_avatar {
+        height: 120px;
+        width: 120px;
+        padding: 3px;
+        object-fit: cover;
+      }
+      form {
+        label {
+          text-align: left;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 149.3%;
+          color: #050401;
+          text-transform: capitalize;
+          margin-top: 15px;
+        }
+        input {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 35px;
+          color: #475469;
+          border: 1px solid #d0d5dd;
+          border-radius: 8px;
+        }
+      }
+      .dashboard_btn {
+        background: #21b17c;
+        border: 1px solid #21b17c;
+        font-size: 16px;
+        padding: 8px 15px;
+        :focus {
+          border: unset;
+        }
+      }
+    }
+    .upload-btn-wrapper {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .image_btn {
+      button {
+        font-size: 15px !important;
+        padding: 15px 30px;
+        border-radius: 8px;
+        border: 1px solid #21b17c;
+        background: #ffffff;
+        color: #21b17c;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        display: inline-block;
+      }
+    }
+
+    .upload-btn-wrapper input[type='file'] {
+      font-size: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+    }
+  }
+}

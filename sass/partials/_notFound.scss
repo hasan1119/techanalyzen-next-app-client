@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'insomnia';
+  src: url('../../public/assets/fonts/Insomnia.ttf');
+}
+.notfound-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/images/footer/footer-background.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-image: linear-gradient(
+  //   to left,
+  //   rgb(247, 12, 157) 0%,
+  //   rgb(39, 2, 160) 50%
+  // );
+
+  .notfound-content {
+    background-color: #201e2b;
+    border-radius: 10px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: 0px 0px 30px 10px rgba(1, 105, 143, 0.7);
+    border: 1px solid #5563ce;
+    // background-image: url('/assets/images/404/404.svg');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    h1 {
+      font-size: 10rem;
+      color: #dbc84d;
+      font-family: 'insomnia';
+      font-weight: 700;
+      text-align: center;
+      span {
+        color: #7155ce;
+      }
+    }
+    h2 {
+      font-size: 6rem;
+      color: #555555;
+      font-family: 'insomnia';
+      text-align: center;
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    button {
+      border: none;
+      outline: none;
+      padding: 7px 15px;
+      //   background-color: #39b54a;
+      background-color: #dbc84d;
+      color: #373636;
+      border-radius: 4px;
+      font-size: 2.3rem;
+      font-weight: 500;
+      margin-top: 50px;
+    }
+    text-align: center;
+  }
+}

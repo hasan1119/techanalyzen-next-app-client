@@ -1,0 +1,92 @@
+.supported-browsers-container {
+  padding: 15px;
+  margin-top: 13rem;
+  min-height: 100vh;
+  .heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+
+  .sub-heading {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-right: 10px;
+    }
+    span {
+      font-size: 2rem;
+      color: #39b54a;
+      font-weight: 600;
+    }
+  }
+  P {
+    font-size: 2rem;
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
+    color: #444;
+  }
+
+  .info-collection {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #444;
+    margin-left: 15px;
+    cursor: unset;
+
+    .btn {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      outline: none;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      background-color: #eee;
+      flex-shrink: 0;
+      color: #444;
+      cursor: unset;
+    }
+    span {
+      font-size: 1.6rem;
+      margin-left: 15px;
+      text-align: left;
+    }
+  }
+  .info-col-after {
+    height: 3rem;
+    width: 1px;
+    background-color: #ddd;
+    margin-left: 45px;
+  }
+  .update {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 992px) {
+    .heading {
+      font-size: 3rem;
+    }
+    .sub-heading {
+      span {
+        font-size: 2.8rem;
+      }
+    }
+    p {
+      font-size: 2.5rem;
+    }
+    .info-collection {
+      .btn,
+      span {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,399 @@
+.lessons-container {
+  min-height: 100vh;
+  display: flex;
+  gap: 35px;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 70px !important;
+  .video-content {
+    flex-basis: 68%;
+    .video-player {
+      video {
+        width: 100%;
+      }
+    }
+    .tab-content {
+      margin-top: -10px;
+      .tab-content-accordion {
+        display: none;
+      }
+      .tab-content-non-accordion {
+        display: block;
+      }
+    }
+
+    .lessons-btn {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 10px;
+      button {
+        background-color: #333;
+        border: 0;
+        outline: 0;
+        padding: 5px 12px;
+        color: whitesmoke;
+        border-radius: 25px;
+        margin-top: 15px;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .instructions {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin: 30px 0;
+      padding: 8px 0;
+      font-size: 16px;
+      flex-wrap: wrap;
+      a {
+        text-decoration: none;
+        color: #de4537;
+      }
+      .instruction-item {
+        color: #de4537;
+        .icon {
+          font-size: 20px;
+          margin-right: 10px;
+        }
+        .instruction-btn {
+          font-weight: 500;
+          cursor: pointer;
+        }
+      }
+      .keyboard {
+        color: #666;
+      }
+    }
+    .tab-nav {
+      ul {
+        li {
+          font-size: 17px;
+          font-weight: 500;
+        }
+        border-bottom: 1px solid #ddd;
+      }
+      margin-bottom: 30px;
+    }
+    .tab-content {
+      font-size: 16px;
+      strong {
+        display: block;
+        font-size: 17px;
+        color: #333;
+      }
+      span {
+        color: #777;
+        display: block;
+      }
+      hr {
+        color: #777;
+        margin: 10px 0;
+      }
+
+      .lesson-link {
+        margin-bottom: 10px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        a {
+          text-decoration: none;
+        }
+        .lesson-icon {
+          margin-right: 10px;
+          font-size: 18px;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .lessons-content {
+    flex-basis: 32%;
+    // box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #eee;
+    .search-bar {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      font-size: 18px;
+      margin-bottom: 20px !important;
+
+      .search-icon {
+        position: absolute;
+        left: 10px;
+        top: 45%;
+        transform: translate(0, -50%);
+        color: #666;
+        font-weight: 500;
+      }
+      .search-box {
+        padding-left: 35px;
+        line-height: 35px;
+        font-size: 16px;
+      }
+    }
+    .module-progress {
+      .progress-text {
+        font-size: 16px;
+        .progress-mod {
+          display: block;
+        }
+        .progress-cer {
+          color: gray;
+        }
+      }
+      .progressbar {
+        height: 10px;
+        border-radius: 25px;
+        margin: 15px 0;
+        background-color: #fff;
+      }
+    }
+
+    .all-modules {
+      max-height: 500px;
+      overflow: scroll;
+      overflow-x: hidden;
+
+      .module-item {
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+          background-color: #2cbc63;
+          color: #eee;
+        }
+        .module {
+          padding: 10px;
+
+          .module-title {
+            display: block;
+            margin-bottom: 7px;
+            font-size: 16px;
+            font-weight: 600;
+          }
+          .module-sub-title {
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            .module-duration {
+              margin-right: 5px;
+            }
+            .module-deadline {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+
+      .lesson-item {
+        padding: 10px;
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        cursor: pointer;
+        .video-icon {
+          margin-top: -5px;
+
+          color: #2cbc63;
+          font-size: 25px;
+          font-weight: 500;
+        }
+        .video-title {
+          width: 100%;
+          .lesson-item-top {
+            display: flex;
+            justify-content: space-between;
+            .title {
+              font-size: 16px;
+              font-weight: 500;
+            }
+            .title-icon {
+              .locked-icon {
+                margin-top: -5px;
+                font-size: 18px;
+                color: #777;
+              }
+              .complete-icon {
+                margin-top: -5px;
+                font-size: 18px;
+                color: #2cbc63;
+              }
+            }
+          }
+          .lesson-item-bottom {
+            font-size: 14px;
+          }
+        }
+        &:hover {
+          background-color: #eee;
+        }
+      }
+      .lesson-item-bottom {
+        font-size: 14px;
+      }
+      &:hover {
+        background-color: #eee;
+      }
+      .accordion-body {
+        padding: 0;
+      }
+
+      /* width and height of the scrollbar */
+      &::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 25px;
+      }
+
+      /* background color of the scrollbar */
+      &::-webkit-scrollbar-track {
+        background: #e0dfdf;
+      }
+
+      /* color of the scrollbar thumb */
+      &::-webkit-scrollbar-thumb {
+        background: #adaeae;
+        border-radius: 25px;
+      }
+
+      /* color of the scrollbar thumb on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #999;
+      }
+
+      // accordion styles
+      .accordion-button:not(.collapsed) {
+        color: #eee !important;
+        background-color: #2cbc63;
+      }
+      .accordion-button:not(.collapsed):hover {
+        color: #eee !important;
+      }
+
+      .accordion-button:not(.collapsed)::after {
+        background-image: url('/assets/images/lessons/minus.png');
+        background-size: cover;
+        width: 18px;
+        height: 18px;
+      }
+      .accordion-button::after {
+        background-image: url('/assets/images/lessons/plus-black.png');
+        background-size: cover;
+        width: 18px;
+        height: 18px;
+      }
+      .accordion-button:not(.collapsed):hover::after {
+        background-image: url('/assets/images/lessons/minus.png');
+      }
+      .accordion-button:hover::after {
+        background-image: url('/assets/images/lessons/plus.png');
+      }
+    }
+  }
+}
+
+// copyright modal
+.copyrightModal {
+  .modal-content {
+    .modal-title {
+      color: #de4537;
+      font-size: 2.5rem;
+    }
+    .modal-body {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+    padding: 30px;
+  }
+}
+
+.keyboardShortcutModal {
+  .modal-content {
+    font-size: 16px;
+    padding: 30px;
+    .modal-title {
+      color: rgb(63, 63, 185);
+      font-size: 20px;
+    }
+    .table {
+      button {
+        outline: none;
+        border: 1px solid #ddd;
+        border-bottom: 4px solid #ddd;
+        border-right: 3px solid #ddd;
+        border-radius: 5px;
+        padding: 3px 5px;
+        background-color: #fff;
+        color: #777;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .lessons-container {
+    flex-direction: column;
+
+    .video-content {
+      flex-basis: 100%;
+      width: 100%;
+      video {
+        width: 100%;
+      }
+
+      .tab-content {
+        .tab-content-accordion {
+          display: block;
+          .accordion-item {
+            button {
+              font-size: 16px;
+              strong {
+                display: block !important;
+                font-size: 17px;
+              }
+              span {
+                display: block !important;
+              }
+            }
+            hr {
+              color: #777;
+              margin: 10px 0;
+            }
+          }
+        }
+        .tab-content-non-accordion {
+          display: none;
+        }
+      }
+    }
+    .lessons-content {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .copyrightModal,
+  .keyboardShortcutModal {
+    .modal-content {
+      .modal-title {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .keyboard {
+    display: none;
+  }
+}

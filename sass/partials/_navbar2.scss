@@ -1,0 +1,239 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  transition: 0.5s;
+  z-index: 99;
+}
+
+.navbar {
+  .logo {
+    cursor: pointer;
+  }
+  .menu-toggler-btn {
+    display: none;
+    color: #39b54a;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    background-color: transparent;
+  }
+
+  .menu-item {
+    line-height: 50px;
+    position: relative;
+    transition: 0.5s;
+    min-width: 30px;
+    font-size: 2rem;
+    .signin-btn {
+      padding: 8px 20px;
+      background: $primaryBtnColor;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .register-btn {
+      background: transparent;
+      color: $primaryBtnColor;
+    }
+
+    a {
+      color: #39b54a;
+    }
+    &::after {
+      content: '';
+      height: 3px;
+      width: 0%;
+      background-color: #39b54a;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      transition: 0.5s;
+      border-radius: 25px;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+
+    &.signin::after {
+      width: 0%;
+    }
+  }
+
+  .nav-auth-menu li:last-child:hover::after {
+    width: 80%;
+  }
+
+  .nav-public-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    li {
+      display: inline-block;
+    }
+  }
+  .nav-auth-menu {
+    display: flex;
+    position: relative;
+    margin: 0;
+
+    .auth-sub-menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 50px;
+      z-index: 100;
+      background-color: #fff;
+      border-radius: 0 0 4px 4px;
+      width: 220px;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+      .profileImg {
+        height: 150px;
+        width: 150px;
+        border-radius: 100%;
+        overflow: hidden;
+        border: 2px solid #39b54a;
+      }
+      .profileImg {
+        height: 70px;
+        width: 70px;
+        margin: 15px auto;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      h3.displayName {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .sub-menu-item {
+        border-bottom: 1px solid #ddd;
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        a {
+          font-size: 16px;
+        }
+        &:hover {
+          background-color: #eee;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+    .auth-profile:hover .auth-sub-menu {
+      display: block;
+    }
+  }
+}
+
+.profile_icon {
+  display: flex;
+  align-items: center;
+}
+
+.profile_icon img {
+  width: 40px;
+  height: 40px;
+  // border: 2px solid #39b54a;
+  object-fit: cover;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.mobile-navbar {
+  position: fixed;
+  left: -100%;
+  top: 0px;
+  z-index: 100;
+  background-color: #fff;
+  max-width: 250px;
+  transition: 0.5s;
+  display: none;
+  min-height: 100vh;
+
+  padding: 0;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  .mobile-nav-logo {
+    background-color: #eee;
+
+    .m-logo {
+      img {
+        width: 80%;
+      }
+    }
+    padding: 15px;
+  }
+  .mobile-menu {
+    .signin-btn {
+      padding: 3px 15px;
+      background: $primaryBtnColor;
+      border-radius: 5px;
+      color: #fff;
+    }
+    .logout-btn {
+      padding: 5px 15px;
+      background: rgb(237, 72, 72);
+      border-radius: 5px;
+      color: #fff;
+      outline: 0;
+      border: 0;
+      font-size: 14px;
+    }
+    li {
+      padding: 10px;
+      color: #39b54a;
+      border-bottom: 1px solid #dddddd7b;
+      &:last-child {
+        border-bottom: none;
+      }
+      a {
+        font-size: 14px;
+        // color: #1dc295;
+        color: #39b54a;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: auto;
+  }
+  .menu-item {
+    display: none;
+  }
+  .menu-toggler-btn {
+    display: block !important;
+  }
+  .nav-public-menu {
+    display: none !important;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    .mobile-nav-logo {
+      display: flex;
+      justify-content: space-between;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  li.auth-profile.menu-item .profile_icon img {
+    border: 2px solid #39b54a;
+  }
+}

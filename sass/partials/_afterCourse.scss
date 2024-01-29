@@ -1,0 +1,121 @@
+.after-course-section {
+  position: relative;
+  width: 100vw;
+
+  .after-course-content {
+    background-image: url('/assets/images/banner/dot-a-white.png');
+    background-size: 20px 20px;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .after-course-icon {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .after-course-text {
+    text-align: center;
+    padding: 15px 0 40px 0;
+
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      color: $primaryTextColor;
+
+      span {
+        color: $secondaryTextColor;
+      }
+    }
+  }
+
+  .after-course-card-item {
+    background-color: transparent;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+
+    .card-inner-item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+      .front-card {
+        text-align: center;
+        border: 1px solid #000a3f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #062743;
+        color: $primaryBgColor;
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        .achievement-card-icon {
+          margin-bottom: 10px;
+
+          img {
+            padding: 7px;
+            border-radius: 50%;
+            background: $secondaryTextColor;
+          }
+        }
+
+        .achievement-card-title {
+          margin: 15px 0;
+
+          h3 {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .back-card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background: #062743;
+        color: $primaryBgColor;
+        transform: rotateY(180deg);
+        align-content: center;
+        border: 1px solid #000a3f;
+        padding: 30px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    &:hover .card-inner-item {
+      transform: rotateY(180deg);
+    }
+
+    @media #{$small} {
+      padding-bottom: 5px;
+    }
+  }
+}

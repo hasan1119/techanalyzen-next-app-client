@@ -1,0 +1,23 @@
+// Color Variables
+$primaryTextColor: #000a3f;
+$secondaryTextColor: #164383;
+$primaryBgColor: #ffffff;
+$secondaryBgColor: #1a212c;
+$primaryBtnColor: #39b54a;
+$secondaryBtnColor: #1a393b;
+$btnHoverColor: linear-gradient(to right, #283048, #859398);
+
+// Extra extra large
+$xxl: 'only screen and (min-width: 1201px) and (max-width:1401px)';
+
+// Extra large
+$xls: 'only screen and (min-width: 992px) and (max-width:1200px)';
+
+//Large Device
+$large: 'only screen and (min-width: 769px) and (max-width:992px)';
+
+// Medium Device
+$medium: 'only screen and (min-width: 577px)  and  (max-width: 768px)';
+
+// small device
+$small: 'only screen and (min-width: 0px)  and (max-width: 576px)';

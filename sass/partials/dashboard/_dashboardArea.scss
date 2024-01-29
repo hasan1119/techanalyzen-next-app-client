@@ -1,0 +1,20 @@
+.dashboard_area {
+  display: flex;
+  .left_bar {
+    max-width: 280px;
+    width: 100%;
+  }
+  .right_bar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .dashboardContent {
+      flex: 1;
+      padding: 25px;
+      height: calc(100vh - 70px);
+      overflow: auto;
+    }
+  }
+}

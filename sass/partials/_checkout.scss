@@ -1,0 +1,126 @@
+.checkout {
+  padding: 80px 0;
+
+  .checkout_top {
+    background-image: url('/assets/images/footer/footer-background.png');
+    background-position: center, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    margin-bottom: 35px;
+    h2 {
+      color: #fff;
+      font-size: 3.5rem;
+    }
+  }
+  .billing_head {
+    font-size: 1.7rem;
+    color: #041e42;
+  }
+  .from_box {
+    padding: 20px 15px 20px 0px;
+    form {
+      label {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+      input {
+        font-size: 15px;
+        color: #626974;
+        border-color: #e6e6e6;
+        padding: 0 15px;
+        border-bottom-width: 1px;
+        height: 55px;
+        border-radius: 6px;
+      }
+
+      input:focus {
+        border: 2px solid #39b54a;
+        outline: none !important;
+      }
+      textarea:focus {
+        border: 2px solid #39b54a;
+      }
+      textarea {
+        font-size: 15px;
+        color: #626974;
+        border-color: #e6e6e6;
+        padding: 10px 15px;
+        border-bottom-width: 1px;
+        height: 80px;
+        border-radius: 6px;
+      }
+    }
+  }
+  .Your_order_head {
+    font-size: 1.7rem;
+    color: #041e42;
+    padding: 0px 20px 0px 20px;
+  }
+  .order_description {
+    padding: 20px 15px 20px 0px;
+
+    .order_head {
+      h5 {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      padding: 17px 20px 17px 20px;
+      background: #f3f5f6;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .order_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    padding: 0px 20px 0px 20px;
+    border-bottom: 1px solid #777;
+    .course_name {
+      ul {
+        display: block;
+        padding-left: 0;
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .course_price {
+      ul {
+        display: block;
+        li {
+          font-weight: 600;
+          letter-spacing: 0.8px;
+        }
+      }
+    }
+  }
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 20px 0px 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.8px;
+  }
+  .advance {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 20px 0px 20px;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+
+.bkashQR {
+  max-width: 250px;
+
+  img {
+    width: 100%;
+  }
+}
