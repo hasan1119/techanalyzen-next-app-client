@@ -12,21 +12,21 @@ app
   .then(() => {
     const server = express();
     // apply proxy in dev mode
-    if (dev) {
+    if (true) {
       server.use(
         '/api',
         createProxyMiddleware({
           target: `${process.env.SERVER_URL}`,
           changeOrigin: true,
         })
-      )
+      );
       server.use(
         '/files',
         createProxyMiddleware({
           target: `${process.env.SERVER_URL}`,
           changeOrigin: true,
         })
-      )
+      );
     }
 
     server.all('*', (req, res) => {

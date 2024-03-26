@@ -418,10 +418,10 @@
                               )
                                 ? (console.log(A),
                                   E(!0),
-                                  fetch(
-                                    'https://techanalyzen.libertysailingschool.net/api/admin/v1/course/update',
-                                    { method: 'put', body: e }
-                                  )
+                                  fetch('/api/admin/v1/course/update', {
+                                    method: 'put',
+                                    body: e,
+                                  })
                                     .then(function (e) {
                                       return e.json();
                                     })

@@ -69,13 +69,10 @@ const AddSubCategory = () => {
       data.title
     ) {
       setLoading(true);
-      fetch(
-        'https://techanalyzen.libertysailingschool.net/api/admin/v1/create-sub-category',
-        {
-          method: 'POST',
-          body: formData,
-        }
-      )
+      fetch('/api/admin/v1/create-sub-category', {
+        method: 'POST',
+        body: formData,
+      })
         .then((r) => r.json())
         .then((data) => {
           if (data?._id) {

@@ -75,13 +75,10 @@ const ProfileDetail = () => {
       return toast('Password do not match')();
     }
     axiosClient
-      .put(
-        `https://techanalyzen.libertysailingschool.net/api/user/${user._id}`,
-        {
-          method: 'PUT',
-          body: JSON.stringify(data),
-        }
-      )
+      .put(`/api/user/${user._id}`, {
+        method: 'PUT',
+        body: JSON.stringify(data),
+      })
       .then((res) => res.json())
       .then((data) => {
         if (data._id) {
@@ -99,13 +96,10 @@ const ProfileDetail = () => {
     formData.append('lastName', data.lastName);
     formData.append('avatar', data.avatar);
 
-    fetch(
-      'https://techanalyzen.libertysailingschool.net/api/v1/user/updateInfo',
-      {
-        method: 'PUT',
-        body: formData,
-      }
-    )
+    fetch('/api/v1/user/updateInfo', {
+      method: 'PUT',
+      body: formData,
+    })
       .then((r) => r.json())
       .then((data) => {
         dispatch(update(data));

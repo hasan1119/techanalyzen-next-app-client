@@ -235,13 +235,10 @@ const updateCourse = () => {
     if (checkInput(data.paidOrFree)) {
       console.log(data);
       setLoading(true);
-      fetch(
-        'https://techanalyzen.libertysailingschool.net/api/admin/v1/course/update',
-        {
-          method: 'put',
-          body: formData,
-        }
-      )
+      fetch('/api/admin/v1/course/update', {
+        method: 'put',
+        body: formData,
+      })
         .then((r) => r.json())
         .then((response) => {
           if (response.thumbnail && response.thumbnail.msg) {

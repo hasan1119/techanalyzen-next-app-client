@@ -101,10 +101,10 @@
                       p.slug &&
                       p.title
                         ? (f(!0),
-                          fetch(
-                            'https://techanalyzen.libertysailingschool.net/api/admin/v1/create-sub-category',
-                            { method: 'POST', body: t }
-                          )
+                          fetch('/api/admin/v1/create-sub-category', {
+                            method: 'POST',
+                            body: t,
+                          })
                             .then(function (e) {
                               return e.json();
                             })

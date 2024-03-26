@@ -128,10 +128,10 @@
                       p.slug &&
                       p.title
                         ? (h(!0),
-                          fetch(
-                            'https://techanalyzen.libertysailingschool.net/api/admin/v1/update-category',
-                            { method: 'POST', body: t }
-                          )
+                          fetch('/api/admin/v1/update-category', {
+                            method: 'POST',
+                            body: t,
+                          })
                             .then(function (e) {
                               return e.json();
                             })

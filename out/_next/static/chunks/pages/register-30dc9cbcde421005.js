@@ -1263,7 +1263,7 @@
                         _.Z.post(
                           ''.concat(
                             window.location.origin,
-                            'https://techanalyzen.libertysailingschool.net/api/auth/v1/verify/otp'
+                            '/api/auth/v1/verify/otp'
                           ),
                           (0, a.Z)((0, n.Z)({}, s), { OTP: g })
                         )

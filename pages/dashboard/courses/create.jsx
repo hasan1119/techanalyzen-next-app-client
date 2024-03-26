@@ -213,13 +213,10 @@ const CreateCourse = () => {
     if (checkInput(data.paidOrFree)) {
       console.log(data);
       setLoading(true);
-      fetch(
-        'https://techanalyzen.libertysailingschool.net/api/admin/v1/course/create',
-        {
-          method: 'POST',
-          body: formData,
-        }
-      )
+      fetch('/api/admin/v1/course/create', {
+        method: 'POST',
+        body: formData,
+      })
         .then((r) => r.json())
         .then((response) => {
           if (response.thumbnail && response.thumbnail.msg) {

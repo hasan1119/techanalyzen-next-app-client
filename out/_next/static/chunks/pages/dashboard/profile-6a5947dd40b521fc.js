@@ -179,10 +179,10 @@
                                   s.append('firstName', N.firstName),
                                     s.append('lastName', N.lastName),
                                     s.append('avatar', N.avatar),
-                                    fetch(
-                                      'https://techanalyzen.libertysailingschool.net/api/v1/user/updateInfo',
-                                      { method: 'PUT', body: s }
-                                    )
+                                    fetch('/api/v1/user/updateInfo', {
+                                      method: 'PUT',
+                                      body: s,
+                                    })
                                       .then(function (e) {
                                         return e.json();
                                       })
@@ -345,12 +345,10 @@
                                     w.password !== w.confirmPassword)
                                   )
                                     return (0, x.Am)('Password do not match')();
-                                  p.Z.put(
-                                    'https://techanalyzen.libertysailingschool.net/api/user/'.concat(
-                                      s._id
-                                    ),
-                                    { method: 'PUT', body: JSON.stringify(N) }
-                                  )
+                                  p.Z.put('/api/user/'.concat(s._id), {
+                                    method: 'PUT',
+                                    body: JSON.stringify(N),
+                                  })
                                     .then(function (e) {
                                       return e.json();
                                     })
