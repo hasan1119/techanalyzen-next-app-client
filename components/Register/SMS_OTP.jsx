@@ -90,10 +90,13 @@ const SMSOTP = ({
     if (isValidOTP && isValidPhone) {
       setLoading(true);
       axios
-        .post(`${window.location.origin}/api/auth/v1/verify/otp`, {
-          ...userInfo,
-          OTP: SMSOTP,
-        })
+        .post(
+          `${window.location.origin}https://techanalyzen.libertysailingschool.net/api/auth/v1/verify/otp`,
+          {
+            ...userInfo,
+            OTP: SMSOTP,
+          }
+        )
         .then(({ data }) => {
           if (data.status === 'success') {
             setStep('EMAIL');

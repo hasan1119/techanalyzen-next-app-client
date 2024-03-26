@@ -86,10 +86,13 @@ const EditSubCategory = () => {
       data.title
     ) {
       setLoading(true);
-      fetch('/api/admin/v1/update-sub-category', {
-        method: 'POST',
-        body: formData,
-      })
+      fetch(
+        'https://techanalyzen.libertysailingschool.net/api/admin/v1/update-sub-category',
+        {
+          method: 'POST',
+          body: formData,
+        }
+      )
         .then((r) => r.json())
         .then((data) => {
           console.log(data);
