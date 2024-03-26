@@ -23,7 +23,7 @@ const Overview = () => {
                 <img
                   src={
                     avatar
-                      ? `/files/thumb/profile/${avatar}`
+                      ? `https://techanalyzen.libertysailingschool.net/files/thumb/profile/${avatar}`
                       : '/logo/profile-img.svg'
                   }
                   alt="user"

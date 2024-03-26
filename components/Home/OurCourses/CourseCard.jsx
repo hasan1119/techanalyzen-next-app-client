@@ -58,7 +58,7 @@ const CourseCard = ({ course }) => {
               <img
                 alt=""
                 className="img-fluid"
-                src={`/files/thumb/course/${thumbnail}`}
+                src={`https://techanalyzen.libertysailingschool.net/files/thumb/course/${thumbnail}`}
               />
             </a>
             <div className="img_bottom">
@@ -74,7 +74,7 @@ const CourseCard = ({ course }) => {
               <div className="intructor">
                 <a href="/templates/pages/singleCourse/singleCourse.html">
                   <img
-                    src={`/files/thumb/profile/${instructor.avatar}`}
+                    src={`https://techanalyzen.libertysailingschool.net/files/thumb/profile/${instructor.avatar}`}
                     className="img-fluid rounded-circle"
                     alt=""
                   />

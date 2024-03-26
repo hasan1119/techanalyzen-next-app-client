@@ -384,10 +384,13 @@
                           )
                             ? (console.log(w),
                               S(!0),
-                              fetch('/api/admin/v1/course/create', {
-                                method: 'POST',
-                                body: e,
-                              })
+                              fetch(
+                                'https://techanalyzen.libertysailingschool.net/api/admin/v1/course/create',
+                                {
+                                  method: 'POST',
+                                  body: e,
+                                }
+                              )
                                 .then(function (e) {
                                   return e.json();
                                 })

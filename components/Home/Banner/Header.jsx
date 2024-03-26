@@ -162,7 +162,7 @@ const Header = () => {
                       alt=""
                       src={
                         avatar
-                          ? `/files/thumb/profile/${avatar}`
+                          ? `https://techanalyzen.libertysailingschool.net/files/thumb/profile/${avatar}`
                           : '/assets/images/svg/user.svg'
                       }
                       className="ms-2"
@@ -173,7 +173,7 @@ const Header = () => {
                       <img
                         src={
                           avatar
-                            ? `/files/thumb/profile/${avatar}`
+                            ? `https://techanalyzen.libertysailingschool.net/files/thumb/profile/${avatar}`
                             : '/assets/images/svg/user.svg'
                         }
                         alt="Profile"

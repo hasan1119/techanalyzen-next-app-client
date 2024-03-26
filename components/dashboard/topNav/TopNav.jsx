@@ -62,7 +62,7 @@ const TopNav = () => {
                   <img
                     src={
                       user.avatar
-                        ? `/files/thumb/profile/${user.avatar}`
+                        ? `https://techanalyzen.libertysailingschool.net/files/thumb/profile/${user.avatar}`
                         : '/logo/profile-img.svg'
                     }
                     alt="Profile Icon"

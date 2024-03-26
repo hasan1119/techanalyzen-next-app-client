@@ -58,7 +58,7 @@ const SubCategories = () => {
               <div key={_id} className="sub-categories-inner-container p-5">
                 <div className="sub-category-img">
                   <img
-                    src={`/files/thumb/subCategory/${thumbnail}`}
+                    src={`https://techanalyzen.libertysailingschool.net/files/thumb/subCategory/${thumbnail}`}
                     className="card-img-top p-0"
                     alt=""
                   />

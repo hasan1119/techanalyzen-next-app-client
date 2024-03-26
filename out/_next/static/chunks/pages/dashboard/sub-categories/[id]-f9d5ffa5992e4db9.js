@@ -60,7 +60,7 @@
                 n.current &&
                 (n.current.src =
                   window.location.origin +
-                  '/files/thumb/subCategory/' +
+                  'https://techanalyzen.libertysailingschool.net/files/thumb/subCategory/' +
                   f.thumbnail);
           },
           [f]
@@ -128,10 +128,13 @@
                       f.slug &&
                       f.title
                         ? (h(!0),
-                          fetch('/api/admin/v1/update-sub-category', {
-                            method: 'POST',
-                            body: t,
-                          })
+                          fetch(
+                            'https://techanalyzen.libertysailingschool.net/api/admin/v1/update-sub-category',
+                            {
+                              method: 'POST',
+                              body: t,
+                            }
+                          )
                             .then(function (e) {
                               return e.json();
                             })

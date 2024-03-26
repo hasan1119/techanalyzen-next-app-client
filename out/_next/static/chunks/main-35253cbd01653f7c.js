@@ -4805,7 +4805,10 @@
                                 (w = y.components[e]),
                                 l.shallow && w && y.route === e && !f)
                               ? [2, c({}, w, { route: e })]
-                              : '/api' === e || e.startsWith('/api/')
+                              : '/api' === e ||
+                                e.startsWith(
+                                  'https://techanalyzen.libertysailingschool.net/api/'
+                                )
                               ? (te({ url: a, router: y }),
                                 [2, new Promise(function () {})])
                               : (M = S)

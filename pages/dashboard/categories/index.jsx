@@ -55,7 +55,7 @@ const Categories = () => {
           <div key={category._id} className="categories-inner-container p-5">
             <div className="category-img">
               <img
-                src={`/files/thumb/category/${category.thumbnail}`}
+                src={`https://techanalyzen.libertysailingschool.net/files/thumb/category/${category.thumbnail}`}
                 className="card-img-top p-0"
                 alt=""
               />
@@ -76,7 +76,7 @@ const Categories = () => {
                           data-bs-target="#collapseOne"
                         >
                           <img
-                            src={`/files/thumb/subCategory/${subCategory.thumbnail}`}
+                            src={`https://techanalyzen.libertysailingschool.net/files/thumb/subCategory/${subCategory.thumbnail}`}
                             className="me-3"
                             alt=""
                           />

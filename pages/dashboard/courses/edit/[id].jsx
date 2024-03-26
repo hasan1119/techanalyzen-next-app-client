@@ -67,7 +67,7 @@ const updateCourse = () => {
         console.log(courseData);
         setData({
           ...courseData,
-          thumbnail: `/files/thumb/course/${courseData.thumbnail}`,
+          thumbnail: `https://techanalyzen.libertysailingschool.net/files/thumb/course/${courseData.thumbnail}`,
           id: courseData._id,
         });
       })
@@ -235,10 +235,13 @@ const updateCourse = () => {
     if (checkInput(data.paidOrFree)) {
       console.log(data);
       setLoading(true);
-      fetch('/api/admin/v1/course/update', {
-        method: 'put',
-        body: formData,
-      })
+      fetch(
+        'https://techanalyzen.libertysailingschool.net/api/admin/v1/course/update',
+        {
+          method: 'put',
+          body: formData,
+        }
+      )
         .then((r) => r.json())
         .then((response) => {
           if (response.thumbnail && response.thumbnail.msg) {

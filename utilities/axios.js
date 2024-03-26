@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // const jsonString = JSON.stringify(device);
 const axiosClient = axios.create({
-  baseURL: `/api`,
+  baseURL: `https://techanalyzen.libertysailingschool.net/api/`,
 });
 
 axiosClient.interceptors.request.use(async (config) => {

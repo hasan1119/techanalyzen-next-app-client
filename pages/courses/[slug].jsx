@@ -1140,7 +1140,7 @@ const CourseView = () => {
                               >
                                 <img
                                   alt=""
-                                  src={`/files/thumb/course/${course.thumbnail}`}
+                                  src={`https://techanalyzen.libertysailingschool.net/files/thumb/course/${course.thumbnail}`}
                                   className="avatar-img w-100 rounded"
                                 />
                               </div>

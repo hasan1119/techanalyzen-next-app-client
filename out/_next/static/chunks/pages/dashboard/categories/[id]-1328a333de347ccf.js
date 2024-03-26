@@ -60,7 +60,7 @@
                 n.current &&
                 (n.current.src =
                   window.location.origin +
-                  '/files/thumb/category/' +
+                  'https://techanalyzen.libertysailingschool.net/files/thumb/category/' +
                   p.thumbnail);
           },
           [p]
@@ -128,10 +128,13 @@
                       p.slug &&
                       p.title
                         ? (h(!0),
-                          fetch('/api/admin/v1/update-category', {
-                            method: 'POST',
-                            body: t,
-                          })
+                          fetch(
+                            'https://techanalyzen.libertysailingschool.net/api/admin/v1/update-category',
+                            {
+                              method: 'POST',
+                              body: t,
+                            }
+                          )
                             .then(function (e) {
                               return e.json();
                             })

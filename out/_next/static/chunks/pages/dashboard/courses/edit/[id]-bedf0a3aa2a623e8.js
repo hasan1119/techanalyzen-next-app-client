@@ -230,7 +230,10 @@
                   console.log(t),
                     M(
                       (0, i.Z)((0, r.Z)({}, t), {
-                        thumbnail: '/files/thumb/course/'.concat(t.thumbnail),
+                        thumbnail:
+                          'https://techanalyzen.libertysailingschool.net/files/thumb/course/'.concat(
+                            t.thumbnail
+                          ),
                         id: t._id,
                       })
                     );
@@ -418,10 +421,13 @@
                               )
                                 ? (console.log(A),
                                   E(!0),
-                                  fetch('/api/admin/v1/course/update', {
-                                    method: 'put',
-                                    body: e,
-                                  })
+                                  fetch(
+                                    'https://techanalyzen.libertysailingschool.net/api/admin/v1/course/update',
+                                    {
+                                      method: 'put',
+                                      body: e,
+                                    }
+                                  )
                                     .then(function (e) {
                                       return e.json();
                                     })

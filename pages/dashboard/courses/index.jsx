@@ -30,7 +30,7 @@ const AllCourse = () => {
               <div className="card course-card">
                 <div className="card-img">
                   <img
-                    src={`/files/thumb/course/${thumbnail}`}
+                    src={`https://techanalyzen.libertysailingschool.net/files/thumb/course/${thumbnail}`}
                     className="card-img-top p-0"
                     alt=""
                   />

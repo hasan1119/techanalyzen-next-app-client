@@ -43,7 +43,9 @@ const EditCategory = () => {
     } else if (typeof data.thumbnail === 'string') {
       imgRef.current &&
         (imgRef.current.src =
-          window.location.origin + '/files/thumb/category/' + data.thumbnail);
+          window.location.origin +
+          'https://techanalyzen.libertysailingschool.net/files/thumb/category/' +
+          data.thumbnail);
     }
   }, [data]);
 
@@ -84,10 +86,13 @@ const EditCategory = () => {
       data.title
     ) {
       setLoading(true);
-      fetch('/api/admin/v1/update-category', {
-        method: 'POST',
-        body: formData,
-      })
+      fetch(
+        'https://techanalyzen.libertysailingschool.net/api/admin/v1/update-category',
+        {
+          method: 'POST',
+          body: formData,
+        }
+      )
         .then((r) => r.json())
         .then((data) => {
           console.log(data);
